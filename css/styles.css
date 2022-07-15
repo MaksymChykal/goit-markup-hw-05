@@ -5,6 +5,7 @@
     --primary-bcg-color: #fff;
     --font-family: 'Raleway', sans-serif;
     --font-family: 'Roboto', sans-serif;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 *,
 *::before,
