@@ -21,9 +21,9 @@
         ><span class="web-logo">Web</span>Studio</a>
       <nav>
         <ul class="menu">
-          <li class="menu-item"><a href="#" class="link">Студия</li></a></li>
-          <li class="menu-item"><a href="./portfolio.html" class="resume">Портфолио</a></li>
-          <li class="menu-item"><a href="#" class="contact">Контакти</a></li>
+          <li class="menu-item"><a href="#" class="menu-list">Студия</li></a></li>
+          <li class="menu-item"><a href="./portfolio.html" class="menu-list">Портфолио</a></li>
+          <li class="menu-item"><a href="#" class="menu-list">Контакти</a></li>
         </ul>
       </nav>
       <ul class="nav-second-list">
@@ -47,7 +47,8 @@
       <section class="section-1">
         <div class="first-section">
         <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="main-button">Заказать услугу</button>
+        <button type="button" class="main-button"data-modal-open>Заказать услугу</button>
+        
         </div>    
       </section>
  
@@ -94,28 +95,37 @@
         <h3 class="we-do">Чем мы занимаемся</h3>
         <ul class="img-do">
           <li>
+            <div class="text-img">
             <img class="imgclass"
               src="./images/img3.jpg"
               width="370"
               height="294"
               alt="создаем сайты"
             />
+            <p class="text">Десктопные приложения</p>
+          </div>
           </li>
           <li>
+            <div class="text-img">
             <img class="imgclass"
               src="./images/img1_1.jpg"
               width="370"
               height="294"
               alt="сайты для всех дивайсов"
             />
+            <p class="text">Мобильные приложения</p>
+            </div>
           </li>
           <li>
+            <div class="text-img">
             <img class="imgclass"
               src="./images/img2_1.jpg"
               width="370"
               height="294"
               alt="графическое оформление"
             />
+            <p class="text">Дизайнерские решения</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -412,5 +422,16 @@
         </div>
       </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button type="button" class="modal-button"data-modal-close>
+              <svg class="modal-icon">
+                <use href="./images/symbol-close.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <script src="./modal.js">
+      </script>
   </body>
 </html>
