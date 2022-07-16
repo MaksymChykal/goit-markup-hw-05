@@ -92,7 +92,8 @@ address {
     position: relative;
   }
   .menu-list:hover,
-  .menu_list:focus {
+  .menu_list:focus,
+  .menu-list.active {
     color: var(--accent-color);
     fill: var(--accent-color);
   }
@@ -108,7 +109,7 @@ address {
     transition: 250ms var(--timing-function);
     margin-top: 28px;
   }
-  .menu-list:hover::after {
+  .menu-list:hover::after, .menu-list.active::after  {
     opacity: 1;
   }
   .container-button 
@@ -540,6 +541,7 @@ margin: 0;
 padding: 0;
 max-width: 370px;
 background: #FFFFFF;
+cursor: pointer;
 
 }
 .offers-link:hover,
@@ -548,6 +550,15 @@ background: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.offers-item:hover,
+.offers-item:focus
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+
 .offers-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
@@ -986,4 +997,5 @@ a {
     top: 8px;
     right: 8px;
     bottom: 543px;
+    cursor: pointer;
 }
